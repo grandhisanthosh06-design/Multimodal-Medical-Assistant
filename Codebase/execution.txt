@@ -1,0 +1,68 @@
+Multimodel Medical Assistant (HPPCS04) - Execution Instructions
+==================================================================
+
+No API key is required. Both models run locally via Ollama.
+main.py is a single combined file that supports TWO ways to run it:
+  1. CLI / batch mode (required)      -> python main.py ...
+  2. Optional dashboard/chatbot UI    -> streamlit run main.py
+
+1. Install Ollama (https://ollama.com), then pull both models:
+   ollama pull llava
+   ollama pull llama3
+   (Ollama runs a local server at http://localhost:11434 automatically)
+
+2. Place your 5 input pairs in the same directory as main.py, named so that
+   an image and its matching prescription share the same trailing number:
+       patient_1.png   prescription_1.txt
+       patient_2.png   prescription_2.txt
+       patient_3.png   prescription_3.txt
+       patient_4.png   prescription_4.txt
+       patient_5.png   prescription_5.txt
+
+--------------------------------------------------------------------
+MODE 1: CLI / BATCH (required entry point for grading)
+--------------------------------------------------------------------
+Install dependencies:
+   pip install requests pillow
+
+Run:
+   python main.py --input_dir ./ --output_dir ./
+
+Output:
+   conversation_1.json, conversation_2.json, conversation_3.json,
+   conversation_4.json, conversation_5.json will be written to --output_dir.
+
+--------------------------------------------------------------------
+MODE 2: OPTIONAL DASHBOARD / CHATBOT UI
+--------------------------------------------------------------------
+Install the one extra dependency:
+   pip install streamlit
+
+Run (from the same directory as main.py):
+   streamlit run main.py
+
+This opens a browser tab (title: "Medical Assistant Pro") with a sidebar
+with 4 sections:
+   - Patient Cases : pick any auto-discovered case, see the image + referring
+     notes, click "Run Analysis Pipeline" to generate the Doctor/Patient
+     conversation as styled chat bubbles, and download that case's JSON
+   - Diagnostics    : live reachability check for Ollama and whether the
+     llava/llama3 models are actually pulled -- useful if you see
+     "[Vision model unavailable]" placeholder output
+   - Batch Queue    : run the pipeline on all discovered pairs in one click,
+     with a real per-case Pending/Completed status and a JSON download
+     for each
+   - Settings       : read-only view of the current model/config values
+
+main.py automatically detects which mode it's running in -- no extra
+flags needed. Both modes share the exact same model-calling functions,
+so results are consistent either way.
+
+--------------------------------------------------------------------
+Notes:
+- If Ollama / llava is not running, the image-analysis step falls back to a
+  clearly labeled placeholder finding.
+- If Ollama / llama3 is not running, the conversation-generation step falls
+  back to a minimal templated conversation.
+- Either way, valid JSON output is still produced so the pipeline and output
+  format can always be verified, even without Ollama installed.

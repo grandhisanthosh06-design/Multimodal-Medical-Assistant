@@ -1,0 +1,44 @@
+{
+  "id": 4,
+  "image_file": "patient_4.png",
+  "prescription_file": "prescription_4.txt",
+  "image_findings": "The image appears to be an MRI brain scan with a focus on the frontal region. Notable features include a significant asymmetry in the brain's hemispheres and a prominently visible mass that could suggest a tumor or abnormal growth. There's also an arrow pointing to the mass, which might be used to indicate the area of interest for further examination or discussion. The overall impression is that the scan is highlighting an area of concern within the brain.",
+  "conversation": [
+    {
+      "speaker": "Doctor",
+      "text": "So, let's take a look at your MRI scan. What do you see here?"
+    },
+    {
+      "speaker": "Patient",
+      "text": "Uh, it looks like my brain... it's all lopsided, and there's this weird growth thingy on the right side?"
+    },
+    {
+      "speaker": "Doctor",
+      "text": "That's right. The image does show a significant asymmetry in your brain's hemispheres, and there's a mass visible in the frontal region. Can you tell me more about what brought you in to see me today?"
+    },
+    {
+      "speaker": "Patient",
+      "text": "Well, I've been having some trouble with my hearing lately. It's like, I can hear sounds, but they're all muffled and it's like my ear is plugged or something. And sometimes I get these crazy spinning feelings, like I'm going to fall over."
+    },
+    {
+      "speaker": "Doctor",
+      "text": "I see. We did order an MRI to investigate further. The scan shows a mass in the right cerebellopontine angle that's extending into the internal auditory canal. That's consistent with a vestibular schwannoma, which is a type of benign tumor."
+    },
+    {
+      "speaker": "Patient",
+      "text": "A tumor? What does that mean?"
+    },
+    {
+      "speaker": "Doctor",
+      "text": "We'll need to discuss treatment options with you. In the meantime, I've prescribed Meclizine to help with the vertigo. We'll also need to do some further testing, including pure-tone audiometry and BAER testing. And we'll refer you to a skull base tumor board to explore radiosurgery versus microsurgical resection."
+    },
+    {
+      "speaker": "Patient",
+      "text": "Okay, got it. So, what's the plan moving forward?"
+    },
+    {
+      "speaker": "Doctor",
+      "text": "We'll schedule you for those tests and get you set up with the tumor board. In the meantime, try to keep an eye on your symptoms and let us know if you notice anything changing."
+    }
+  ]
+}

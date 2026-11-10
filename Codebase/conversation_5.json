@@ -1,0 +1,24 @@
+{
+  "id": 5,
+  "image_file": "patient_5.png",
+  "prescription_file": "prescription_5.txt",
+  "image_findings": "The image depicts a medical scan, likely an MRI, showing a section of a person's head with a focus on the brain. Notable features include what appears to be a large, complex lesion on the right side of the brain. There is also a region that looks like a bone fracture or break, which is an abnormality. The overall impression is that of a serious neurological condition that may require immediate medical attention. The image is in black and white, emphasizing the details of the brain structure.",
+  "conversation": [
+    {
+      "speaker": "Doctor",
+      "text": "Based on the imaging, I noted: The image depicts a medical scan, likely an MRI, showing a section of a person's head with a focus on the brain. Notable features include what appears to be a large, complex lesion on the right side of the brain. There is also a region that looks like a bone fracture or break, which is an abnormality. The overall impression is that of a serious neurological condition that may require immediate medical attention. The image is in black and white, emphasizing the details of the brain structure."
+    },
+    {
+      "speaker": "Patient",
+      "text": "I see. What does that mean for my treatment?"
+    },
+    {
+      "speaker": "Doctor",
+      "text": "Given your prescription details (Patient 5: 42-year-old female, presents with bitemporal visual disturbance, amenorrhea, and frontal headaches. Brain MRI...), we will proceed accordingly."
+    },
+    {
+      "speaker": "Patient",
+      "text": "Understood, thank you doctor."
+    }
+  ]
+}

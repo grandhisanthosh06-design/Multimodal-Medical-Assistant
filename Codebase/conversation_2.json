@@ -1,0 +1,48 @@
+{
+  "id": 2,
+  "image_file": "patient_2.png",
+  "prescription_file": "prescription_2.txt",
+  "image_findings": "The image displays a radiograph (X-ray) of a brain in a lateral view. Visible features include the temporal lobes, which are intact, and the cerebellum, which is positioned in the lower part of the image. The frontal lobe is also visible at the top. There appears to be a small, dark area in the lower right quadrant, which could be interpreted as a mass or a lesion, though the details are not clear. The overall impression is that of a typical lateral brain X-ray, with no overt abnormalities or notable features outside of the small dark area.",
+  "conversation": [
+    {
+      "speaker": "Doctor",
+      "text": "So, you've been experiencing some tension-type headaches and feeling lightheaded. Can you tell me more about when these symptoms started and how often they occur?"
+    },
+    {
+      "speaker": "Patient",
+      "text": "Yeah, it started about a month ago. I get these weird headaches that feel like someone's squeezing my head. They're pretty frequent, but they're not all the time. Maybe every other day or so."
+    },
+    {
+      "speaker": "Doctor",
+      "text": "I see. And have you noticed any other symptoms or triggers that might be contributing to these headaches? For example, do you get them at the same time every day or after doing certain activities?"
+    },
+    {
+      "speaker": "Patient",
+      "text": "Actually, yeah. I do get them when I'm stressed or tired. Like, if I don't get enough sleep or if I'm having a bad day, the headaches tend to get worse."
+    },
+    {
+      "speaker": "Doctor",
+      "text": "That makes sense. We did an MRI and it showed a normal posterior fossa architecture and patent basal cisterns, but we did notice a small dark area in the lower right quadrant of your brain. Can you tell me what you think that might be?"
+    },
+    {
+      "speaker": "Patient",
+      "text": "Honestly, I'm not really sure. I didn't know what to make of it. The doctor told me it could be a mass or a lesion, but I'm not a doctor, so..."
+    },
+    {
+      "speaker": "Doctor",
+      "text": "Well, we'll want to keep an eye on that area, but for now, we can start with some conservative management. I've prescribed you some Paracetamol for your headaches, and we'll want to follow up with a complete multi-sequence MRI correlation in a few weeks. Sound good to you?"
+    },
+    {
+      "speaker": "Patient",
+      "text": "Yeah, that sounds fine. Just want to get these headaches under control."
+    },
+    {
+      "speaker": "Doctor",
+      "text": "Great. We'll also want to schedule a routine outpatient follow-up to check in on your symptoms and make any necessary adjustments. We'll go from there."
+    },
+    {
+      "speaker": "Patient",
+      "text": "Okay, got it. Thanks, doctor."
+    }
+  ]
+}
